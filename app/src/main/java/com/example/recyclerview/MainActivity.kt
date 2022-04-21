@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         initRecyclerView()
+
     }
 
     private fun initRecyclerView() {
@@ -23,5 +24,6 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerSuperHero.layoutManager = LinearLayoutManager(this)
         binding.recyclerSuperHero.adapter = SuperHeroAdapter(SuperHeroProvider.superHeroList)
     }
+ 
 
 }
